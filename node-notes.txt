@@ -1,0 +1,182 @@
+
+
+
+FE 
+    - HTML
+    - CSS
+        - bootstrap
+    - Javascript
+
+framework 
+
+    -   React.js/ts
+    -   Angular.ts/js
+    -   Vue.js
+
+BE
+    - server
+        - APIs running: Application programming interface
+            - functions which keep on or responsible for 
+                execution on the server
+
+
+FE <------> BE <-------> DB
+
+
+BE:
+    .Net
+    Java (Hibernate and Springboot)
+    PhP
+    RoR
+    Python (Django and Flask)
+    NodeJS (Javascript framework)
+
+
+------------ NodeJS --------------
+
+- Before NodeJS, Javascript could only be run in the browsers
+    - Google Chrome - Javascript engine -> V8
+    - Firefox  - Javascript engine -> Spider monkey
+    - IE - Javascript engine -> Charka
+    - Fastest Javascript engine is V8 from google Chrome
+        https://github.com/v8/v8 (open source)
+        https://nodejs.org/en/download/source-code/current
+
+- Ryan Dahl (founder of NodeJS)
+    -> V8 source code -> executed it on a server
+    -> now JS could be run on the server
+    -> Known as NodeJS (open source)
+
+- developer writes a code (high level) , english like code
+    - not understood by the computer
+- developer code -> machine code (0's and 1's)
+
+
+///// Problems solved by NodeJS
+
+Server written in Java
+    - multi threading
+        - threading: to do every task on the server, java creates a thread
+        - multiple threads to serve multiple requests
+
+    - at any given point of time, only one thread can be executed
+    - all other threads have to wait till the current thread finishes its work
+
+    - if you have to scale your BE
+        - you need to buy more servers
+        - more money / cost involved
+        - you need more maintenance overhead
+
+NodeJS
+    - Javascript is asynchronous 
+    - no concept of multi- threading , instead it uses the concept of
+        single-threading
+    - always it has a one thread
+
+    - event queue
+        - every request which comes to NodeJS is put inside a queue (FIFO)
+    - event loop
+        - this loop starts picking up one event at a time
+        - moves on to pick up the next event
+        - there is no wait time
+
+    - I can scale up my BE without extra cost
+    - maintenance is also low
+    
+
+//// NodeJS Installation
+
+https://nodejs.org/en/download/
+
+With nodeJS Installation, 2 things additionally get installed:
+(1) NPM
+(2) Core modules
+
+
+//// NodeJS in detail
+
+All the nodeJS functionality is organised in the form of modules
+    - modules: small group of functions created to do a specific task.
+
+NodeJS has 3 diff categories of modules:
+
+(1) Core modules - functionality which got installed with nodeJS
+    e.g. 
+    a. filesystem - fs - 
+    b. operating system - os - 
+    c. http - 
+
+(2) User defined modules - code written by the developer
+    - you use a core modules
+    - you can use a  npm module
+    - you can use other user defined modules
+
+(3) NPM modules (https://npmjs.com)
+    npm => node package manager
+
+
+NPM: Node package manager
+    - got installed with NodeJS in my computer
+    - maintains the package repository (https://npmjs.com)
+    - npm will connect and fetch the packages available on npmjs.com
+
+    Nodemon => It helps to keep the server running continously even if any changes 
+                are made in the .js file.
+                
+    Node => To start or see the output for the js file we put the CLI(Command Line Interface).
+            syntax -> node <file-name>
+
+//// Create a server using HTTP core module
+
+Server
+    -> request
+
+        Request comes from the Client , and
+        the information requested from the DataBase-server
+        - we can use JSON format
+    -> response
+        the information sent by the server to the client
+        - we can use JSON format
+    -> needs to be run on an address
+        - serve listens to the incoming requests on this address
+
+
+NPM project
+
+> npm init
+
+    - creates a package.json file
+
+    download a package from npmjs.com
+    - npm install/i <package_name> --save
+    - creates a node_modules folder
+    - the downloaded package will reside here
+
+
+
+////// Local vs Global packages
+
+(1) local package : a package which is visible only in the current folder
+
+    npm i <package_name> --save
+
+
+(2) global package : the package gets installed globally in your computer and its
+    functionality is accessible anywhere in the computer
+
+    npm i <package_name> --save -g
+
+
+
+---------------- POSTMAN ---------------------
+
+Download and install
+https://www.postman.com/downloads/
+
+
+
+
+
+
+
+ we are learning Append operation in Node.JS

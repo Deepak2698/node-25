@@ -1,0 +1,11 @@
+Steps:
+
+    - npm init => help you in setting up npm 
+                -- you can manually change your project name, author, keywords
+                    repository, etc.
+    
+    - npm init -y => this is directly going to setup your node
+
+    docs => https://nodejs.org/docs/latest/api/
+
+    
