@@ -8,4 +8,12 @@ Steps:
 
     docs => https://nodejs.org/docs/latest/api/
 
+    Web Address => https://www.zomato.com/ => Origin (url in simple words)
     
+    HTML => Hyper Text Markup Language => 
+    Hyper Text is the html file which is used to display the content on the web page
+
+    http => Hyper Text Transfer Protocol =>
+    https => Hyper Text Transfer Protocol Secure =>
+    https is a secure version of http. It uses SSL/TLS to encrypt the connection between the client and server, ensuring that data transmitted over the internet is secure and cannot be intercepted by third parties.
+    SSL => Secure Socket Layer =>
